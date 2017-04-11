@@ -9,3 +9,5 @@ strokeCap(SQUARE); // Square the line endings
 line(270, 25, 340, 95);
 strokeCap(ROUND); // Round the line endings
 line(350, 25, 420, 95);
+ellipse(500, 60, 70, 70);
+strokeWeight(12);

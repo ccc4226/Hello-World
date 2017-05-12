@@ -1,0 +1,40 @@
+int x = 100;
+void setup()
+{
+  size (320, 220);
+  smooth();
+}
+void draw()
+{
+  beginShape();
+  vertex(x+40, 100);
+  vertex(x+40, 160);
+  vertex(x+70, 130);
+  vertex(x+100, 160);
+  vertex(x+100, 100);
+  endShape(CLOSE);
+rect(x+10, 110, 30, 10);
+rect(x+100, 110, 30, 10);
+rect(x+50, 70, 40, 30);
+  fill(0);
+rect(x+65, 85, 10, 10);
+fill(255);
+
+  if(keyPressed){
+    if(key=='v' || key=='V') {
+      fill(200,145,0);
+    }
+    else {
+      fill(20);
+    }
+  }
+  if (keyPressed&&(key==CODED)) {
+    if (keyCode==RIGHT) {
+      x=x+15;
+    }
+    else if (keyCode==LEFT) {
+      x=x-15;
+    }
+  }
+  
+}
